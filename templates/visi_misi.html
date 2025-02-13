@@ -14,8 +14,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container d-flex align-items-center p-3">
-            <img src="{{ url_for('static', filename='img/LOGO.png') }}" alt="Logo OSFATA" class="img-fluid me-2"
-                style="height: 60px; width: auto;">
+            <img src="{{ url_for('static', filename='img/LOGO.png') }}" alt="Logo OSFATA" class="img-fluid me-2" style="height: 60px; width: auto;">
             <div class="d-flex flex-column lh-1">
                 <a class="navbar-brand" href="#">OSFATA</a>
                 <small class="text-white">Osfata Santri YAFATA</small>
@@ -36,92 +35,110 @@
         </div>
     </nav>
 
-    <!-- Visi, Misi, dan Tujuan OSFATA -->
-    <section id="visi-misi" class="py-5 bg-light">
-        <div class="container">
-            <div class="row justify-content-center">
-                <!-- Visi -->
-                <div class="container">
-                    <div class="row g-4 align-items-center">
-                        <!-- Card Gambar -->
-                        <div class="col-15 col-md-3">
-                            <div class="card shadow-lg border-0">
-                                <img src="{{ url_for('static', filename='img/LOGO.png') }}" 
-                                     alt="IMG_3155" 
-                                     class="card-img-top rounded"
-                                     style="width: 100%; height: auto; max-width: 400px;">
-                            </div>
-                        </div>                        
-                
-                        <!-- Card Teks -->
-                        <div class="col-12 col-md-9">
-                            <div class="card shadow-lg border-0">
-                                <div class="card-body">
-                                    <h2 class="fw-bold text-primary"><i class="fas fa-eye"></i> Visi</h2>
-                                    <p style="text-align: justify;">
-                                        Mewujudkan OSFATA sebagai wadah pembelajaran santri dalam berorganisasi, membentuk santri yang memiliki 
-                                        <strong>jiwa kepemimpinan</strong>, tanggung jawab, dan amanah dalam menjalankan tugasnya.
-                                        <br>Menjadi organisasi yang <strong>mandiri, inovatif, dan berorientasi pada pengembangan diri santri</strong>, 
-                                        baik dalam aspek keilmuan, keterampilan, maupun spiritual.
-                                        <br><strong>Menanamkan nilai-nilai Islami</strong>, akhlakul karimah, dan rasa persaudaraan antar-santri 
-                                        agar tercipta lingkungan yang harmonis dan kondusif.
-                                        <br>Menjadikan santri <strong>aktif, kreatif, dan solutif</strong> dalam menghadapi tantangan zaman serta 
-                                        mampu memberikan kontribusi nyata bagi pondok pesantren dan masyarakat.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>         
+    <section id="Visi Misi & Tujuan" class="py-2 bg-light"></section>
+    <div class="container text-center">
+        <h2 class="fw-bold text-primary">Visi Misi & Tujuan</h2>
+ <!-- Visi, Misi, dan Tujuan OSFATA -->
+<section id="visi-misi" class="py-5 bg-light">
+    <div class="container">
+        <div class="row g-4 align-items-center">
+            <!-- Card Gambar -->
+            <div class="col-12 col-md-4 text-center">
+                <img src="{{ url_for('static', filename='img/visi_misi.JPG') }}" 
+                     alt="visi_misi" 
+                     class="img-fluid rounded shadow-lg w-100" 
+                     style="max-width: 500px; height: auto;">
+            </div>
 
-                <div class="row gy-4">
-                    <!-- Misi -->
-                    <div class="col-md-6 d-flex align-items-center">
-                        <div class="p-4 bg-white shadow rounded w-100">
-                            <h2 class="fw-bold text-primary text-start"><i class="fas fa-bullseye"></i> Misi</h2>
-                            <ul class="list-group shadow-sm">
-                                <li class="list-group-item d-flex align-items-start">
-                                    <i class="fas fa-check-circle text-success me-2"></i> 
-                                    Sebagai motor penggerak seluruh kegiatan santri yang bertanggung jawab atas kelancaran aktivitas di pondok pesantren.
-                                </li>
-                                <li class="list-group-item d-flex align-items-start">
-                                    <i class="fas fa-check-circle text-success me-2"></i> 
-                                    Meningkatkan keterampilan kepemimpinan dan manajerial santri agar mampu mengelola organisasi dengan baik.
-                                </li>
-                                <li class="list-group-item d-flex align-items-start">
-                                    <i class="fas fa-check-circle text-success me-2"></i> 
-                                    Membantu pondok pesantren dalam mensukseskan program-program melalui kegiatan positif dan produktif.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                
-                    <!-- Tujuan -->
-                    <div class="col-md-6 d-flex align-items-center">
-                        <div class="p-4 bg-white shadow rounded w-100">
-                            <h2 class="fw-bold text-primary text-start"><i class="fas fa-flag-checkered"></i> Tujuan</h2>
-                            <ul class="list-group shadow-sm">
-                                <li class="list-group-item d-flex align-items-start">
-                                    <i class="fas fa-check-circle text-warning me-2"></i> 
-                                    Mewujudkan suasana pondok pesantren yang kondusif, aman, dan tertib.
-                                </li>
-                                <li class="list-group-item d-flex align-items-start">
-                                    <i class="fas fa-check-circle text-warning me-2"></i> 
-                                    Menciptakan lingkungan Islami, di mana santri saling mengingatkan dalam kebaikan.
-                                </li>
-                                <li class="list-group-item d-flex align-items-start">
-                                    <i class="fas fa-check-circle text-warning me-2"></i> 
-                                    Menanamkan nilai kepemimpinan dan tanggung jawab agar santri siap menghadapi tantangan di masa depan.
-                                </li>
-                            </ul>
-                        </div>
+            <!-- Card Teks -->
+            <div class="col-12 col-md-8">
+                <div class="card shadow-lg border-0">
+                    <div class="card-body">
+                        <h2 class="fw-bold text-primary"><i class="fas fa-eye"></i> Visi</h2>
+                        <p class="text-justify">
+                            Mewujudkan OSFATA sebagai wadah pembelajaran santri dalam berorganisasi, membentuk santri yang memiliki
+                            <strong>jiwa kepemimpinan</strong>, tanggung jawab, dan amanah dalam menjalankan tugasnya.
+                            <br>Menjadi organisasi yang <strong>mandiri, inovatif, dan berorientasi pada pengembangan diri santri</strong>,
+                            baik dalam aspek keilmuan, keterampilan, maupun spiritual.
+                            <br><strong>Menanamkan nilai-nilai Islami</strong>, akhlakul karimah, dan rasa persaudaraan antar-santri
+                            agar tercipta lingkungan yang harmonis dan kondusif.
+                            <br>Menjadikan santri <strong>aktif, kreatif, dan solutif</strong> dalam menghadapi tantangan zaman serta
+                            mampu memberikan kontribusi nyata bagi pondok pesantren dan masyarakat.
+                        </p>
                     </div>
                 </div>
-        </section>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="misi-tujuan" class="py-5">
+    <div class="container">
+        <div class="row mt-3 gy-4 gx-4"> <!-- Mengubah mt-5 menjadi mt-3 -->
+            <!-- Misi -->
+            <div class="col-md-6 d-flex">
+                <div class="p-4 bg-white shadow rounded w-100 h-100 d-flex flex-column">
+                    <h2 class="fw-bold text-primary text-start"><i class="fas fa-bullseye"></i> Misi</h2>
+                    <ul class="list-group list-group-flush flex-grow-1">
+                        <li class="list-group-item border-0">
+                            <i class="fas fa-check-circle text-success me-2"></i> 
+                            Menjadi motor penggerak seluruh kegiatan santri agar setiap program berjalan efektif dan sesuai dengan nilai-nilai keislaman.
+                        </li>
+                        <li class="list-group-item border-0">
+                            <i class="fas fa-check-circle text-success me-2"></i> 
+                            Mengembangkan keterampilan kepemimpinan dan manajerial santri untuk mengelola organisasi dengan disiplin dan tanggung jawab.
+                        </li>
+                        <li class="list-group-item border-0">
+                            <i class="fas fa-check-circle text-success me-2"></i> 
+                            Membantu pondok pesantren dalam mensukseskan program-program melalui kegiatan yang positif, inovatif, dan produktif.
+                        </li>
+                        <li class="list-group-item border-0">
+                            <i class="fas fa-check-circle text-success me-2"></i> 
+                            Membangun karakter santri yang memiliki kepedulian sosial, semangat gotong royong, dan kebersamaan dalam setiap aktivitas.
+                        </li>
+                        <li class="list-group-item border-0">
+                            <i class="fas fa-check-circle text-success me-2"></i> 
+                            Menanamkan sikap disiplin, kemandirian, dan tanggung jawab agar santri siap menghadapi tantangan kehidupan di masa depan.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        
+            <!-- Tujuan -->
+            <div class="col-md-6 d-flex">
+                <div class="p-4 bg-white shadow rounded w-100 h-100 d-flex flex-column">
+                    <h2 class="fw-bold text-primary text-start"><i class="fas fa-flag-checkered"></i> Tujuan</h2>
+                    <ul class="list-group list-group-flush flex-grow-1">
+                        <li class="list-group-item border-0">
+                            <i class="fas fa-check-circle text-warning me-2"></i> 
+                            Mewujudkan suasana pondok pesantren yang kondusif, aman, dan tertib dengan menerapkan nilai-nilai Islami dalam kehidupan sehari-hari.
+                        </li>
+                        <li class="list-group-item border-0">
+                            <i class="fas fa-check-circle text-warning me-2"></i> 
+                            Menciptakan lingkungan Islami yang harmonis, dengan santri saling mengingatkan dalam kebaikan dan menegakkan akhlak mulia.
+                        </li>
+                        <li class="list-group-item border-0">
+                            <i class="fas fa-check-circle text-warning me-2"></i> 
+                            Menanamkan nilai kepemimpinan dan tanggung jawab agar santri memiliki kesiapan mental dalam menghadapi tantangan di masa depan.
+                        </li>
+                        <li class="list-group-item border-0">
+                            <i class="fas fa-check-circle text-warning me-2"></i> 
+                            Membentuk santri yang tidak hanya unggul dalam ilmu agama, tetapi juga memiliki wawasan luas dalam berbagai bidang.
+                        </li>
+                        <li class="list-group-item border-0">
+                            <i class="fas fa-check-circle text-warning me-2"></i> 
+                            Mengembangkan kreativitas dan inovasi santri agar dapat memberikan kontribusi nyata bagi pondok pesantren dan masyarakat.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer class="bg-primary text-white text-center py-2">
-        <p class="mb-3">Copyright &copy; 2025 Organisasi Santri YAFATA.</p>
+        <p class="mb-0">Copyright &copy; 2025 Organisasi Santri YAFATA.</p>
     </footer>
 
     <!-- Bootstrap JS -->
