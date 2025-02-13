@@ -6,21 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>OSFATA</title>
     <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/LOGO.png') }}">
-</head>
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     
-   <!-- Tambahkan di dalam <head> untuk Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .navbar-brand small {
+            font-size: 0.8rem;
+        }
+        .card {
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .footer {
+            background: #004085;
+            color: white;
+            padding: 10px 0;
+        }
+    </style>
 </head>
 
 <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container d-flex align-items-center p-3">
-            <img src="{{ url_for('static', filename='img/LOGO.png') }}" alt="Logo OSFATA" class="img-fluid me-2"
-                style="height: 60px; width: auto;">
+            <img src="{{ url_for('static', filename='img/LOGO.png') }}" alt="Logo OSFATA" class="img-fluid me-2" style="height: 50px;">
             <div class="d-flex flex-column lh-1">
                 <a class="navbar-brand" href="#">OSFATA</a>
                 <small class="text-white">Osfata Santri YAFATA</small>
@@ -35,20 +51,92 @@
                     <li class="nav-item"><a class="nav-link" href="{{url_for('profil')}}">Profil</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{url_for('visi_misi')}}">Visi Misi Tujuan</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{url_for('struktur')}}">Struktur</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="{{url_for('erd')}}">Erd</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="{{url_for('erd')}}">ERD</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!-- Hero Section -->
+    <div class="container mt-5">
+        <div class="card p-4 text-center">
+            <h1 class="font-weight-bold text-black">Entity Relationship Diagram</h1>
+            <div class="row align-items-center mt-4">
+                <div class="col-md-6">
+                    <img src="../static/img/ERD_OSFATA.PNG" alt="ERD OSFATA" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                    <h1 class="font-bold">Relasi Antar Entitas</h1>
+                    <p style="text-align: justify;"class="text-black">One-to-One (1:1)
+
+                        Organisasi ke Kontak → Satu organisasi memiliki satu informasi kontak utama.
+                        Anggota ke Jabatan (Jika dibuat tabel jabatan tersendiri)</p>
+                    <p style="text-align: justify;"class="text-black">One-to-Many (1:M)
+
+                        Organisasi ke Anggota → Satu organisasi memiliki banyak anggota.
+                        Organisasi ke Kegiatan → Satu organisasi memiliki banyak kegiatan.
+                        Organisasi ke Kontak → Satu organisasi dapat menerima banyak pesan kontak dari pengguna.</p>
+                    <p style="text-align: justify;"class="text-black">Many-to-Many (M:N)
+
+                        Anggota ke Kegiatan → Satu anggota bisa mengikuti banyak kegiatan, dan satu kegiatan bisa diikuti oleh banyak anggota. Relasi ini dipecah menjadi tabel Anggota_Kegiatan sebagai penghubung.
+                        </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5W 1H Section -->
+    <div class="container mt-5">
+        <div class="card p-4">
+            <h1 class="text-center font-weight-bold font-bold">5W 1H</h1>
+            <div class="row mt-4">
+                <div class="col-md-4 mb-4">
+                    <div class="card p-3 bg-light h-100">
+                        <h5>What (Apa?)</h5>
+                        <p>Sistem ini adalah platform informasi yang menampilkan detail tentang Organisasi Santri YAFATA (OSFATA), termasuk profil organisasi, struktur, visi, misi, tujuan, dan galeri.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card p-3 bg-light h-100">
+                        <h5>Who (Siapa?)</h5>
+                        <p> Pengguna utama sistem ini adalah anggota OSFATA, calon anggota, serta masyarakat umum yang ingin mengetahui lebih lanjut tentang organisasi ini.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card p-3 bg-light h-100">
+                        <h5>When (Kapan?)</h5>
+                        <p> Sistem ini digunakan kapan saja oleh pengguna yang ingin mengakses informasi terkait OSFATA atau menghubungi organisasi melalui formulir kontak yang tersedia.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card p-3 bg-light h-100">
+                        <h5>Where (Di mana?)</h5>
+                        <p>Sistem ini diakses secara online melalui situs web osfata.vercel.app.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card p-3 bg-light h-100">
+                        <h5>Why (Mengapa?)</h5>
+                        <p>Tujuan dari sistem ini adalah untuk menyediakan informasi lengkap tentang OSFATA kepada publik dan memfasilitasi komunikasi antara organisasi dan pihak yang tertarik melalui fitur "Kontak Kami".</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card p-3 bg-light h-100">
+                        <h5>How (Bagaimana?)</h5>
+                        <p>Pengguna dapat menavigasi melalui berbagai halaman di situs web untuk membaca informasi tentang OSFATA. Jika mereka ingin menghubungi organisasi, mereka dapat mengisi formulir di halaman "Kontak Kami", yang kemudian akan disimpan dalam entitas "Kontak" di basis data untuk ditindaklanjuti oleh pihak organisasi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
-    <footer class="bg-primary text-white text-center py-2">
-        <p class="mb-3">copyright &copy; 2025 Organisasi Santri YAFATA.</p>
+    <footer class="footer text-center mt-5">
+        <p>Copyright &copy; 2025 Organisasi Santri YAFATA</p>
     </footer>
-    
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 
 </html>
